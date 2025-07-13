@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함선우 포트폴리오</title>
+    <meta
+      name="description"
+      content="함선우의 웹 개발 포트폴리오입니다. 주로 프론트엔드와 백엔드 웹 개발을 다루고 있습니다."
+    />
+    <meta name="author" content="함선우" />
+    <meta
+      name="keywords"
+      content="웹개발, 프론트엔드, 백엔드, 개발자 포트폴리오"
+    />
+    <!-- OG Tag -->
+    <meta property="og:title" content="함선우 포트폴리오" />
+    <meta
+      property="og:description"
+      content="함선우의 웹 개발 포트폴리오입니다. 주로 프론트엔드와 백엔드 웹 개발을 다루고 있습니다."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/og-img.png"
+    />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/0e8f2c34ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <!-- 이미지(로고) -->
+        <div class="nav__logo">
+          <img class="nav_img" src="./images/logo.png" alt="로고" />
+          <a href="#" class="nav__brand">함선우</a>
+        </div>
+        <!-- 메뉴 -->
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#work">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- home -->
+      <section class="home container section" id="home">
+        <!-- home Data  -->
+        <div class="home__data">
+          <h2 id="typeit" class="home__title"></h2>
+          <a href="#contact" class="button">Contact</a>
+          <div class="home__social">
+            <!-- link다시 넣어야함  -->
+            <a
+              href="https://github.com/dev-suz"
+              target="_blank"
+              title="깃허브 링크"
+            >
+              <i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+            <a href="" target="_blank" title="링크드인 링크">
+              <i class="fa-brands fa-linkedin home__social-icon"></i>
+            </a>
+            <a href="" target="_blank" title="유튜브 링크">
+              <i class="fa-brands fa-youtube home__social-icon"></i>
+            </a>
+          </div>
+        </div>
+        <!-- home image  -->
+        <img
+          class="home__img"
+          src="./images/home/profile.gif"
+          alt="프로필 이미지"
+        />
+      </section>
+      <!-- about -->
+      <section class="about section bg-lavender-1" id="about">
+        <h2 class="section__title">About</h2>
+
+        <div class="about__container container">
+          <div>
+            <img
+              class="about__img"
+              src="./images/about/about.gif"
+              alt="about 프로필"
+            />
+          </div>
+          <div class="about__data">
+            <h3 class="about__subtitle">저는 이런 사람입니다</h3>
+            <p class="about__text">
+              <strong class="about__subtitle2">성장에 목마른 사람</strong><br />
+              s/w 개발 기술의 가치와 혁신에 매료되어 무작정 뛰어들었습니다.
+              감사하게도 짧게나마 인턴경험을 할 수 있었습니다. 어렵다는 것도
+              직접 경험했기에 잘 알고 있습니다. 부족함을 느낄 때 마다 새로운
+              배움의 기회를 찾고 학습해 체득해나가고 있습니다.
+              <br /><br />
+              <strong class="about__subtitle2">꾸준함의 가치를 아는 사람</strong
+              ><br />
+              좌절했던 경험이 있습니다. 꾸준함을 생활화하기 위해 루틴으로 만들어
+              움직입니다.
+              <br /><br />
+              <strong class="about__subtitle2"
+                >개발 학습의 어려움을 알기에, 공유를 좋아하는 사람</strong
+              ><br />
+              개발 학습 과정에서 많은 좌절을 겪었습니다. 성장의 밑거름이니까요.
+              조금 먼저 도전해보았던 경험을 누군가와 함께 나누고 동반 성장의
+              즐거움과 가치를 잘 알고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills__container container">
+          <!-- data -->
+          <div>
+            <h3 class="skills_subtitle">Profesional Skills</h3>
+            <p class="skills_text">
+              학습한 언어들과 프레임워크를 학습도와 함께 작성했습니다.
+            </p>
+            <div>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon  -->
+                  <i class="fa-brands fa-html5 skills__icon"></i>
+                  <!-- skill name  -->
+                  <span class="skills__name">HTML5</span>
+                </div>
+                <div>
+                  <!-- percentage  -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="html5"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon  -->
+                  <i class="fa-brands fa-css3 skills__icon"></i>
+                  <!-- skill name  -->
+                  <span class="skills__name">CSS3</span>
+                </div>
+                <div>
+                  <!-- percentage  -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="css3"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon  -->
+                  <i class="fa-brands fa-js skills__icon"></i>
+                  <!-- skill name  -->
+                  <span class="skills__name">Javascript</span>
+                </div>
+                <div>
+                  <!-- percentage  -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="javascript"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon  -->
+                  <i class="fa-brands fa-react skills__icon"></i>
+                  <!-- skill name  -->
+                  <span class="skills__name">React</span>
+                </div>
+                <div>
+                  <!-- percentage  -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="react"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon  -->
+                  <i class="fa-brands fa-node skills__icon"></i>
+                  <!-- skill name  -->
+                  <span class="skills__name">Node</span>
+                </div>
+                <div>
+                  <!-- percentage  -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+                <progress
+                  class="skills__progress"
+                  id="node.js"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+            </div>
+          </div>
+
+          <!-- 이미지 -->
+          <div>
+            <img
+              class="skills__img"
+              src="./images/skills/computer-skills.jpg"
+              alt="컴퓨터 사진"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- work  -->
+      <section class="section work" id="work">
+        <h2 class="section__title">work</h2>
+        <div class="work__container container">
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+          <a
+            class="work__link"
+            href="./images/work/pjt_cosmine.png"
+            target="_blank"
+            title="COSMINE 프로젝트"
+          >
+            <img
+              class="work__img"
+              src="./images/work/pjt_cosmine.png"
+              alt="COSMINE 프로젝트 썸네일"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact</h2>
+
+        <div class="contact__container container">
+          <form id="contactForm" class="contact__form">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="이름"
+              required
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="subject"
+              placeholder="제목"
+              required
+            />
+            <textarea
+              class="contact__input"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="내용"
+              required
+            ></textarea>
+            <button class="contact__button button font-inherit">보내기</button>
+          </form>
+        </div>
+      </section>
+      <!-- floating button -->
+      <button class="floating-button" id="floating-button">
+        <i class="fa-solid fa-arrow-up floating-button-icon"></i>
+      </button>
+    </main>
+    <!-- footer  -->
+    <footer class="footer">
+      <p class="footer__title">함선우</p>
+      <div class="footer__social">
+        <!-- link다시 넣어야함  -->
+        <a
+          href="https://github.com/dev-suz"
+          target="_blank"
+          title="깃허브 링크"
+        >
+          <i class="fa-brands fa-github footer__icon"></i>
+        </a>
+        <a href="" target="_blank" title="링크드인 링크">
+          <i class="fa-brands fa-linkedin footer__icon"></i>
+        </a>
+        <a href="" target="_blank" title="유튜브 링크">
+          <i class="fa-brands fa-youtube footer__icon"></i>
+        </a>
+      </div>
+      <p class="footer__copy">
+        Copyright &copy; 2025 함선우 All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

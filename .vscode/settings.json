@@ -1,0 +1,6 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // prettier를 기본 포매터로 설정
+  "editor.formatOnSave": true, // 파일을 저장 할 때 마다 포매팅 실행
+  "editor.tabSize": 2,
+  "liveServer.settings.port": 5501 // 탭사이즈 2개의 공백 문자로 표시
+}
