@@ -93,3 +93,44 @@ typeit
   .delete(8, { delay: 700 })
   .type('<strong class="home__title-color">함선우</strong>입니다.')
   .go();
+
+// 이메일 클라이언트
+const $contactForm = document.getElementById('contactForm');
+const $contactBtn = document.getElementById('contact-button');
+$contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  // console.log(e);
+  // console.dir(e);
+  // 폼 하위 정보를 갖고.
+  // const name = $contactForm.name.value;
+  // const subject = $contactForm.subject.value;
+  // const message = $contactForm.message.value;
+  // const to = 'return0@knou.ac.kr';
+  // console.log(to);
+  // 이메일 클라이언트를 열기
+  // location.href =
+  //   'mailto:' +
+  //   to +
+  //   '?subject=' +
+  //   encodeURIComponent(`${name}님 문의] ${subject}`) +
+  //   '&body=' +
+  //   encodeURIComponent(message);
+  // const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1';
+
+  // window.open(gmailUrl + location.href, '_blank');
+
+  // 중복 샌딩 방지용
+  $contactBtn.disabled = true;
+
+  emailjs
+    .sendForm('service_zf1jn5r', 'template_bunoleg', this, 'SRZdiKB8yeMLXURv3')
+    .then(() => {
+      alert('메일이 성공적으로 전송되었습니다');
+      $contactBtn.disabled = false;
+      $contactForm.reset();
+    })
+    .catch((err) => {
+      alert('메일 전송에 실패했습니다.' + err.text || JSON.stringify(err)),
+        ($contactBtn.disabled = false);
+    });
+});
